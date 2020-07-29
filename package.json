@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && rm -rf distG/* && cp -R dist/thisdot/* distG && cd distG && git add . && git commit -m \"update\" && git push origin master",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
