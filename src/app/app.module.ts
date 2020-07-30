@@ -13,7 +13,7 @@ import {MenuComponent} from './components/menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +23,7 @@ import {MenuComponent} from './components/menu/menu.component';
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@ import {HttpClient, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from '
 import { catchError } from 'rxjs/operators';
 import { filterXSS } from 'xss'
 import { environment } from '../../../environments/environment';
+import {GithubUserReturn} from "../../interfaces"
 
 @Injectable({
   providedIn: 'root'
@@ -29,9 +30,10 @@ export class GithubService implements HttpInterceptor {
     }))
   }
   // This returns an observable
-  public getUsers(name: string) {
+  public getUsers(name: string, page: number): Observable<GithubUserReturn> {
     // Verify we are not sending anything bad at the github API
-    return this.http.get(this.getUsersURL, {params: {q: filterXSS(name)}})
+    // @ts-ignore
+    return this.http.get(this.getUsersURL, {params: {q: filterXSS(name), page: page}})
   }
 }
 
