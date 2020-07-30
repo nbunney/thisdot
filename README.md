@@ -23,21 +23,21 @@ else. Also, be sure there's enough of your own work to give us an accurate impre
 * You may use any additional third-party libraries you see fit.
 
 ### Minimum Requirements
-- [ ] Use https://github.com/search as a reference for functionality, but feel free to change style, behavior, and features as
+- [X] Use https://github.com/search as a reference for functionality, but feel free to change style, behavior, and features as
 you see fit and time permitting. It is not necessary to match the actual design of GitHub and we are not expecting a
 professional design. Focus on functionality and code.
 As a user,
-* I can search for users and see a paginated list of results
-* I can navigate through the next and previous pages of the paginated results
-* I see the total count of search results
-* I see notable information for each search result, such as the description, star/follower count, profile pictures, etc.
-* I can select a search result and be taken to the applicable page on github.com API
+- [ ] I can search for users and see a paginated list of results
+- [ ] I can navigate through the next and previous pages of the paginated results
+- [ ] I see the total count of search results
+- [ ] I see notable information for each search result, such as the description, star/follower count, profile pictures, etc.
+- [ ] I can select a search result and be taken to the applicable page on github.com API
 The app should utilize GitHub's public API; either the v3 REST API or the v4 GraphQL version. Examples of the API
 call you'll likely need to make:
-Search
-Documentation: https://developer.github.com/v3/search/
 
-● https://api.github.com/search/users?q=example 
+###Search Documentation: 
+* https://developer.github.com/v3/search/
+* https://api.github.com/search/users?q=example 
 
 ## Project Info From Angular CLI
 
