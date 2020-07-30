@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <img src="assets/ThisDot.png" height="45"/>
+  <h1>GitHub User Search for ThisDot.co by Nathan Bunney</h1>
+  <span class="fill-space"></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>view_headline</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a href="https://linkedin.com/in/nathanbunney" target="_blank" mat-menu-item>
+      <mat-icon>link</mat-icon>
+      <span>Nathan Bunney's Linkedin</span>
+      <Link>
+    </a>
+    <a href="https://inventaweb.net" target="_blank" mat-menu-item>
+      <mat-icon>link</mat-icon>
+      <span>Nathan's Former Consultancy</span>
+    </a>
+  </mat-menu>
+</mat-toolbar>
