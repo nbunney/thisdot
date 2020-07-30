@@ -1,5 +1,5 @@
 export const environment = {
   production: false,
-  githubKey: "dd45d118f7f8cab1b796ce9a2dbfa9e24cb9a08e",
+  githubKey: "a37efdbb17addf201382ac6b57802f3f9ba04c67",
   githubUser: "nbunney"
 };
